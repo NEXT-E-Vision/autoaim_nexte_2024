@@ -68,12 +68,6 @@ def generate_launch_description():
         executable='vision_attacker_node',
         parameters=[node_params],
     )
-  
-    record_process = ExecuteProcess(  
-        cmd=['ros2', 'bag', 'record', '-a'],  
-        shell=True,
-        output='log'
-    )
 
     return LaunchDescription([
         robot_state_publisher,
@@ -81,5 +75,4 @@ def generate_launch_description():
         delay_tracker_node,
         serial_driver_node,
         attacker_node,
-        record_process,
     ])
