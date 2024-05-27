@@ -1,0 +1,9 @@
+[submodule "vision_attacker"]
+	path = vision_attacker
+	url = https://github.com/prom-se/vision_attacker
+[submodule "vision_serial_driver"]
+	path = vision_serial_driver
+	url = https://github.com/prom-se/vision_serial_driver
+[submodule "vision_interfaces"]
+	path = vision_interfaces
+	url = https://github.com/prom-se/vision_interfaces
