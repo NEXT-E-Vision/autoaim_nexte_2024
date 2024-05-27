@@ -42,5 +42,10 @@ clone本项目
 使用launch文件启动
 
     ros2 launch rm_visioin_bringup nexte_autoaim.launch.py
-## 5.致谢(排名不分先后)
+## 5.部署说明
+- 需要根据机器人结构修改[launch_params.yaml](rm_vision/rm_vision_bringup/config/launch_params.yaml)中的平移变换(odom2camera).
+- 需要根据实际情况选择或修改[串口协议](vision_serial_driver/include/vision_serial_driver/packet.h).
+- 调试时使用rqt中plugns-configuration-Dynamic Reconfigure插件动态调参.
+- 主要调整的参数为armor_tracker和vision_attacker中的参数.
+## 6.致谢(排名不分先后)
   在本赛季程序的开发过程中,因为个人能力和经验不足,在这里特别感谢rm_vision项目,上海交通大学云汉交龙战队,沈阳航空航天大学TUP战队,四川大学火锅战队以及镖群和视觉救命群的各位大佬的帮助。
